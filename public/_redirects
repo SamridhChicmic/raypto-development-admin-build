@@ -1,0 +1,9 @@
+/* Netlify Redirects */
+# Redirect all requests to index.html (for SPA)
+/*    /index.html   200
+
+# Example: API proxy (uncomment and edit as needed)
+# /api/*  https://api.example.com/:splat  200
+
+# Example: Redirect old path to new path
+# /old-path  /new-path  301
