@@ -1,0 +1,65 @@
+{
+  "app/(secured)/dashboard/analytics/DashboardStatsCharts.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/477d4af2.eac77bcb9f2763c3.js",
+      "static/chunks/8699.d7044c0dd9cb497d.js"
+    ]
+  },
+  "app/(secured)/dashboard/analytics/WeeklyActiveUsersChart.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/477d4af2.eac77bcb9f2763c3.js",
+      "static/chunks/8699.d7044c0dd9cb497d.js"
+    ]
+  },
+  "app/(secured)/dashboard/analytics/WorldMapChart.tsx -> react-svg-worldmap": {
+    "id": 54836,
+    "files": [
+      "static/chunks/5e724964.49975de6a20ef713.js",
+      "static/chunks/4836.d7ead2d755b52cf8.js"
+    ]
+  },
+  "app/(secured)/users/view/[id]/transaction/TransactionStatsChart.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/477d4af2.eac77bcb9f2763c3.js",
+      "static/chunks/8699.d7044c0dd9cb497d.js"
+    ]
+  },
+  "components/atoms/react-apexcharts/index.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/477d4af2.eac77bcb9f2763c3.js",
+      "static/chunks/8699.d7044c0dd9cb497d.js"
+    ]
+  },
+  "components/molecules/Charts/AreaChart/AreaChart.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/477d4af2.eac77bcb9f2763c3.js",
+      "static/chunks/8699.d7044c0dd9cb497d.js"
+    ]
+  },
+  "components/molecules/Charts/ChartContentRenderer.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/477d4af2.eac77bcb9f2763c3.js",
+      "static/chunks/8699.d7044c0dd9cb497d.js"
+    ]
+  },
+  "components/molecules/Charts/RadarChart/RadarChart.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/477d4af2.eac77bcb9f2763c3.js",
+      "static/chunks/8699.d7044c0dd9cb497d.js"
+    ]
+  },
+  "components/molecules/EarningReport/EarningReportChart.tsx -> react-apexcharts": {
+    "id": 78699,
+    "files": [
+      "static/chunks/477d4af2.eac77bcb9f2763c3.js",
+      "static/chunks/8699.d7044c0dd9cb497d.js"
+    ]
+  }
+}
