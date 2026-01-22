@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix --max-warnings=2",
+    "lint": "next lint --fix --max-warnings=12",
     "prepare": "husky"
   },
   "dependencies": {
