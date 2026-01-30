@@ -1,7 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useMemo } from "react";
 import dynamic from "next/dynamic";
+import { useTheme } from "next-themes";
+import { THEME_TYPE, CHART_COLORS } from "@/shared/constants";
 
 // Dynamically import WorldMap to avoid SSR issues
 const WorldMap = dynamic(
@@ -26,6 +28,7 @@ interface WorldMapChartProps {
 }
 
 const WorldMapChart = ({ data }: WorldMapChartProps) => {
+  const { resolvedTheme } = useTheme();
   const stylingFunction = (context: StyleContext) => {
     // Calculate max value from data if available, otherwise use a default
     const maxValue =
@@ -50,13 +53,21 @@ const WorldMapChart = ({ data }: WorldMapChartProps) => {
     (item) => item.country !== "EP" && item.country !== "WO",
   );
 
+  const chartColor = useMemo(
+    () =>
+      resolvedTheme === THEME_TYPE.DARK
+        ? CHART_COLORS.SECONDARY
+        : CHART_COLORS.PRIMARY,
+    [resolvedTheme],
+  );
+
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-lg p-0 dark:border-gray-800 w-full h-full">
+    <div className="bg-bgwhite dark:bg-darkbgprimary rounded-lg p-0 dark:border-darkbordercolor1 w-full h-full">
       <div className="mb-4">
-        <h3 className="text-[1.5rem] font-bold text-[#1B2559] dark:text-white">
+        <h3 className="text-[1.5rem] font-bold text-textprimary dark:text-bgwhite">
           Users by Country
         </h3>
-        <p className="text-[14px] font-medium text-[#A3AED0] dark:text-gray-400">
+        <p className="text-[14px] font-medium text-textparagraph dark:text-textparagraphlight">
           Global distribution of active users
         </p>
       </div>
@@ -65,7 +76,7 @@ const WorldMapChart = ({ data }: WorldMapChartProps) => {
           richInteraction={true}
           backgroundColor={"transparent"}
           borderColor={"white"}
-          color={"#4F46E5"} // Using the primary purple-blue color
+          color={chartColor} // Using the primary purple-blue color
           tooltipBgColor={"#1f2937"}
           title=""
           valueSuffix=" users"
